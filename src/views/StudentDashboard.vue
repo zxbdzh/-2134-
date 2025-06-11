@@ -17,7 +17,10 @@
         <h2 class="panel-title">个人基本信息</h2>
         <div class="student-info">
           <div class="avatar">
-            <img src="../assets/avatar.png" alt="学生头像" />
+            <div class="avatar">
+              <!-- 创建一个CSS样式的头像占位符 -->
+              <div class="avatar-placeholder">{{ studentInfo.name?.[0] || '李' }}</div>
+            </div>
           </div>
           <div class="info-details">
             <h3>{{ studentInfo.name || '李培洪' }}</h3>
